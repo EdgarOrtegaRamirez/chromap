@@ -1,0 +1,30 @@
+# chromap
+
+# OS
+.DS_Store
+*.log
+
+# Go
+vendor/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+chromap
+
+# Test
+coverage.out
+coverage.txt
+profile.out
+model.out
+mem.out
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
