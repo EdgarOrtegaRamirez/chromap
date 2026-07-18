@@ -15,12 +15,12 @@ type Palette []color.Color
 type HarmonyType string
 
 const (
-	Complementary  HarmonyType = "complementary"
-	Analogous      HarmonyType = "analogous"
-	Triadic        HarmonyType = "triadic"
-	Tetradic       HarmonyType = "tetradic"
+	Complementary   HarmonyType = "complementary"
+	Analogous       HarmonyType = "analogous"
+	Triadic         HarmonyType = "triadic"
+	Tetradic        HarmonyType = "tetradic"
 	SplitComplement HarmonyType = "split-complementary"
-	Monochromatic  HarmonyType = "monochromatic"
+	Monochromatic   HarmonyType = "monochromatic"
 )
 
 // Generate creates a palette using the specified harmony.

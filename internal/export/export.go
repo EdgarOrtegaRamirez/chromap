@@ -14,20 +14,20 @@ import (
 type Format string
 
 const (
-	FormatCSS    Format = "css"
-	FormatJSON   Format = "json"
-	FormatSVG    Format = "svg"
-	FormatHTML   Format = "html"
+	FormatCSS      Format = "css"
+	FormatJSON     Format = "json"
+	FormatSVG      Format = "svg"
+	FormatHTML     Format = "html"
 	FormatTailwind Format = "tailwind"
-	FormatText   Format = "text"
+	FormatText     Format = "text"
 )
 
 // PaletteData holds palette info for export.
 type PaletteData struct {
-	Name     string
-	Base     color.Color
-	Harmony  palette.HarmonyType
-	Colors   []color.Color
+	Name    string
+	Base    color.Color
+	Harmony palette.HarmonyType
+	Colors  []color.Color
 }
 
 // Render converts a palette to the specified format.
@@ -69,9 +69,9 @@ func renderCSS(data PaletteData) (string, error) {
 
 func renderJSON(data PaletteData) (string, error) {
 	type colorEntry struct {
-		Hex   string  `json:"hex"`
-		RGB   string  `json:"rgb"`
-		HSL   string  `json:"hsl"`
+		Hex    string `json:"hex"`
+		RGB    string `json:"rgb"`
+		HSL    string `json:"hsl"`
 		Bright string `json:"text_color"`
 	}
 

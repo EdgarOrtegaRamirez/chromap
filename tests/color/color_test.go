@@ -9,10 +9,10 @@ import (
 
 func TestParseHex(t *testing.T) {
 	tests := []struct {
-		input  string
-		wantR  int
-		wantG  int
-		wantB  int
+		input string
+		wantR int
+		wantG int
+		wantB int
 	}{
 		{"#ff6b35", 255, 107, 53},
 		{"#FF6B35", 255, 107, 53},
