@@ -16,6 +16,10 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: '1.25'
+          cache: false
+
+      - name: Download deps
+        run: go mod download || true
 
       - name: Run tests
         run: go test -v -cover ./...
